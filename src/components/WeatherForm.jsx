@@ -3,7 +3,7 @@ import { useWeatherForm } from "../hooks/useWeatherForm";
 
 export const WeatherForm = (props) => {
   const { handleChangeCity } = props;
-  const { infoForm, handleChange, handleSubmit, errors } =
+  const { infoForm, handleChange, handleSubmit } =
     useWeatherForm(handleChangeCity);
 
   const styleForm = {
