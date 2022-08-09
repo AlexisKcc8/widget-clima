@@ -26,6 +26,7 @@ export const useWeatherApp = () => {
       setLoading(true);
       let request = await fetch(fullUrl);
       let json = await request.json();
+      alert("cargado");
       setWeatherResponse(json);
       setLoading(false);
     } catch (err) {
