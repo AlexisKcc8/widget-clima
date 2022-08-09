@@ -14,7 +14,7 @@ export const WeatherApp = () => {
     errorRequest,
   } = useWeatherApp();
   if (errorRequest !== null) {
-    console.log("salio mal");
+    console.log(errorRequest);
   }
   return (
     <section className="weather-container">
